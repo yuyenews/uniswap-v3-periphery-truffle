@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 pragma solidity >=0.6.0;
 
-import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import "@uniswap-truffle/v3-core/contracts/interfaces/IUniswapV3Pool.sol";
 
 library PoolTicksCounter {
     /// @dev This function counts the number of initialized ticks that would incur a gas cost between tickBefore and tickAfter.
@@ -44,7 +44,10 @@ library PoolTicksCounter {
                 ((tickBefore % self.tickSpacing()) == 0) &&
                 (tickBefore < tickAfter);
 
-            if (wordPos < wordPosAfter || (wordPos == wordPosAfter && bitPos <= bitPosAfter)) {
+            if (
+                wordPos < wordPosAfter ||
+                (wordPos == wordPosAfter && bitPos <= bitPosAfter)
+            ) {
                 wordPosLower = wordPos;
                 bitPosLower = bitPos;
                 wordPosHigher = wordPosAfter;

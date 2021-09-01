@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.4.1-solc-0.7-2",
-    "@uniswap-truffle/lib": "^4.0.1-alpha",
-    "@uniswap-truffle/v2-core": "1.0.1",
-    "@uniswap-truffle/v3-core": "1.0.0",
+    "@uniswap-truffle/libs": "^4.0.1-alpha",
+    "@uniswap-truffle/v2-core": "^1.0.1",
+    "@uniswap-truffle/v3-core": "^1.0.0",
     "base64-sol": "1.0.1",
-    "hardhat-watcher": "^2.1.1"
+    "truffle-hdwallet-provider": "^1.0.17"
   },
   "homepage": "https://uniswap.org",
   "repository": {
