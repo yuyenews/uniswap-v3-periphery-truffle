@@ -3,7 +3,7 @@ pragma solidity =0.7.6;
 pragma abicoder v2;
 
 import "@uniswap-truffle/v3-core/contracts/interfaces/IUniswapV3Pool.sol";
-import "@uniswap-truffle/libs/contracts/libraries/SafeERC20Namer.sol";
+import "@uniswap-truffle/lib/contracts/libraries/SafeERC20Namer.sol";
 
 import "./libraries/ChainId.sol";
 import "./interfaces/INonfungiblePositionManager.sol";
