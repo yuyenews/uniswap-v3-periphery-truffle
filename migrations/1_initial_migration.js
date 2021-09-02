@@ -3,5 +3,5 @@ const SwapRouter = artifacts.require("SwapRouter");
 
 module.exports = function (deployer) {
   deployer.deploy(Migrations);
-  deployer.deploy(SwapRouter, "factoryAddress", "WETH9");
+  deployer.deploy(SwapRouter, "--factoryAddress--", "--WETH9--");
 };
